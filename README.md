@@ -8,8 +8,8 @@ An IoT-based plant monitoring system that uses a DHT11 sensor to measure air tem
 
 ## 📸 Preview Web Interface
 
-![Preview Web Interface](./assets/img/preview1.png) 
-![Preview Web Interface](./assets/img/preview2.png) 
+![Preview Web Interface](https://github.com/RaffiDM/IoT-Project/blob/main/assets/img/Preview1.png?raw=true) 
+![Preview Web Interface](https://github.com/RaffiDM/IoT-Project/blob/main/assets/img/Preview2.png?raw=true) 
 
 
 
