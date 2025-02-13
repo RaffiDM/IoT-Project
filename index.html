@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website untuk melakukan monitoring data suhu udara, kelembapan udara, dan kelembapan tanah.">
+    <meta name="keywords" content="CV Amrita Jayasri, Company Profile,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring IoT</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow shadow-sm fixed-top py-3" id="home">
+        <div class="container">
+            <img src="assets/img/Gambar IOT.png" alt="">
+            <a class="navbar-brand fw-bold" href="#"><span class="primary">Monitoring Project IoT</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder" href="#view">ThingSpeak Visualization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder" href="#filtered">Filtered Visualization</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- CAROUSEL START -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/IoT3.jpg" class="d-block w-100 carousel-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Monitoring Project IoT</h5>
+                    <p>Website untuk melakukan monitoring data suhu udara, kelembapan udara, dan kelembapan tanah.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                    <img src="assets/img/IOT4.jpg" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Monitoring Project IoT</h5>
+                        <p>Website untuk melakukan monitoring data suhu udara, kelembapan udara, dan kelembapan tanah.</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                    <img src="assets/img/IOT5.jpg" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Monitoring Project IoT</h5>
+                        <p>Website untuk melakukan monitoring data suhu udara, kelembapan udara, dan kelembapan tanah.</p>
+                    </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- CAROUSEL END -->
+
+
+<!-- VIEW START -->
+<div id="view" class="services mt-5 bg-light py-5">
+    <div class="container">
+        <div class="title-container text-center">
+            <h2 class="fw-bold">ThingSpeak Visualization</h2>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-6">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2593026/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            </div>
+            <div class="col-md-6">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2593026/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                <!-- </div> -->
+            </div>
+            <div class="col-md-6 mt-5">
+                    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2593026/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- VIEW END -->
+
+<!-- FILTERED VISUALIZATION START -->
+<div id="filtered" class="mt-5 bg-light py-5">
+    <div class="container">
+        <div class="title-container text-center">
+            <h2 class="fw-bold">Filtered Visualization</h2>
+        </div>
+        <form id="filterForm" class="row g-3 justify-content-center mt-4">
+            <div class="col-md-3">
+                <label for="startDate" class="form-label">Start Date</label>
+                <input type="date" class="form-control" id="startDate" required>
+            </div>
+            <div class="col-md-3">
+                <label for="startTime" class="form-label">Start Time</label>
+                <input type="time" class="form-control" id="startTime" required>
+            </div>
+            <div class="col-md-3">
+                <label for="endDate" class="form-label">End Date</label>
+                <input type="date" class="form-control" id="endDate" required>
+            </div>
+            <div class="col-md-3">
+                <label for="endTime" class="form-label">End Time</label>
+                <input type="time" class="form-control" id="endTime" required>
+            </div>
+            <div class="col-md-3">
+                <label for="dataType" class="form-label">Data Type</label>
+                <select id="dataType" class="form-select" required>
+                    <option value="1">Temperature</option>
+                    <option value="2">Humidity</option>
+                    <option value="3">Soil Moisture</option>
+                </select>
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <button type="button" onclick="filterData()" class="btn btn-success">Filter</button>
+            </div>
+        </form>
+        <div id="filteredDataContainer" class="mt-4">
+            <canvas id="myFilteredChart" width="800" height="400"></canvas>
+            <div class="mt-3 text-center">
+                <div id="minValue" class="fw-bold"></div>
+                <div id="maxValue" class="fw-bold"></div>
+                <div id="averageValue" class="fw-bold"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FILTERED VISUALIZATION END -->
+
+<!-- FOOTER START -->
+<footer class="footer mt-5 bg-dark text-white py-3 text-center">
+    <div class="container">
+        <p class="mb-0">&copy; 2024 Monitoring Project IoT. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- FOOTER END -->
+
+<script>
+    function filterData() {
+        // Ambil nilai dari form input
+        const startDate = document.getElementById('startDate').value;
+        const startTime = document.getElementById('startTime').value;
+        const endDate = document.getElementById('endDate').value;
+        const endTime = document.getElementById('endTime').value;
+        const dataType = document.getElementById('dataType').value;
+
+        // URL API untuk mengambil data dari ThingSpeak
+        const apiUrl = `https://api.thingspeak.com/channels/2565286/feeds.json?`;
+        
+        // Parameter yang akan dikirimkan dalam query string
+        const params = {
+            'api_key': '', // Masukkan API Key ThingSpeak Anda
+            'start': `${startDate} ${startTime}`,  // Gabungkan tanggal dan waktu mulai
+            'end': `${endDate} ${endTime}`,  // Gabungkan tanggal dan waktu akhir
+            'timezone': 'Asia/Jakarta',  // Atur zona waktu jika diperlukan
+            'round': 'hour',  // Atur pembulatan waktu jika diperlukan
+            'timescale': '10 minute',  // Atur skala waktu jika diperlukan
+            'field': parseInt(dataType)  // Menyesuaikan jenis data yang dipilih
+        };
+
+        // Buat query string dari objek params
+        const queryString = Object.keys(params).map(key => `${key}=${params[key]}`).join('&');
+
+        // Lakukan fetch untuk mendapatkan data dari ThingSpeak
+        fetch(apiUrl + '&' + queryString)
+            .then(response => response.json())
+            .then(data => {
+                // Map data yang diperoleh menjadi format yang diperlukan untuk Chart.js
+                const chartData = data.feeds.map(feed => ({
+                    x: new Date(feed.created_at).toLocaleString(),  // Konversi timestamp ke format yang lebih mudah dibaca
+                    y: parseFloat(feed[`field${parseInt(dataType)}`])
+                }));
+
+                 // Hitung rata-rata, minimum, dan maksimum data yang difilter
+                const sum = chartData.reduce((acc, data) => acc + data.y, 0);
+                const average = sum / chartData.length;
+                const min = Math.min(...chartData.map(data => data.y));
+                const max = Math.max(...chartData.map(data => data.y));
+
+                 // Tampilkan nilai-nilai di halaman
+                document.getElementById('averageValue').textContent = `Average: ${average.toFixed(2)}`;
+                document.getElementById('minValue').textContent = `Minimum: ${min.toFixed(2)}`;
+                document.getElementById('maxValue').textContent = `Maximum: ${max.toFixed(2)}`;
+
+                // Konfigurasi Chart.js untuk menampilkan data yang difilter
+                const ctx = document.getElementById('myFilteredChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: chartData.map(data => data.x),
+                        datasets: [{
+                            label: dataType === '1' ? 'Temperature' : dataType === '2' ? 'Humidity' : 'Soil Moisture',
+                            data: chartData.map(data => data.y),
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => console.error(error));
+    }
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollLinks = document.querySelectorAll('a[href^="#"]');
+            
+            for (const scrollLink of scrollLinks) {
+                scrollLink.addEventListener('click', smoothScroll);
+            }
+    
+            function smoothScroll(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50, // Adjust the offset as needed
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        var navbarLinks = document.querySelectorAll('.navbar-nav a');
+
+        navbarLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                navbarLinks.forEach(function (otherLink) {
+                    // Hapus kelas "active" dari semua elemen navbar
+                    otherLink.classList.remove('active');
+                });
+
+                // Tambahkan kelas "active" pada elemen yang diklik
+                link.classList.add('active');
+            });
+        });
+    });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-nav a {
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a.active {
+    color: #05a505 !important;
+}
+
+
+
+.navbar-nav a:hover {
+    color: #05a505; 
+}
+
+
+.navbar img {
+    max-width: 40px; /* Lebar maksimum gambar */
+    height: auto; /* Menjaga aspek rasio gambar */
+    border-radius: 50%; /* Mengubah gambar menjadi lingkaran */
+    margin-right: 10px; /* Memberikan margin sebelah kanan agar tidak terlalu dekat dengan teks */
+}
+
+.carousel-img {
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    border-top: 10px solid #07bf07;
+    background-color: #00000094;
+}
+
+/* Show the caption on all devices */
+.carousel-caption {
+    display: block;
+}
+
+
+
+.primary {
+    color: #07bf07;
+}
+
+.active {
+    color: #07bf07 !important;
+}
+
+#aboutcompany {
+    padding: 60px 0; /* Padding atas dan bawah */
+    text-align: justify;
+}
+
+#aboutcompany img {
+    max-width: 100%; /* Agar gambar tidak melebihi lebar parent */
+    height: auto; /* Agar gambar tetap proporsional */
+    border-radius: 8px; /* Border radius untuk sudut gambar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan pada gambar */
+    margin-left: 120px;
+}
+
+@media (max-width: 991px) {
+    #aboutcompany img {
+        margin-left: 30px; /* Reset margin menjadi 0 untuk perangkat tablet */
+    }
+}
+
+@media (max-width: 767px) {
+    #aboutcompany img {
+        margin-left: auto; /* Reset margin menjadi otomatis untuk tengah di layar mobile */
+        margin-right: auto; /* Reset margin menjadi otomatis untuk tengah di layar mobile */
+        display: block; /* Membuat gambar menjadi elemen blok agar dapat diatur margin otomatis */
+    }
+}
+
+#aboutcompany p {
+    color: #555; /* Warna teks paragraf */
+}
+
+#companyvalue {
+    background-color: #f8f9fa;
+    padding: 30px 0; /* Padding atas dan bawah */
+    /* text-align: justify; */
+}
+
+.title-container {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* .about-us h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #07bf07;
+    bottom: 0;
+    left: calc(50% - 25px);
+} */
+
+/* Styling Visi dan Misi */
+.about-us-title {
+    color: #000; /* Warna hitam */
+}
+
+.about-us-subtitle {
+    font-size: 20px;
+    color: #333; /* Warna abu-abu gelap */
+}
+
+/* Styling Container Visi dan Misi */
+.about-us .col-md-6 {
+    margin-bottom: 30px;
+}
+
+/* Box Shadow Effect on Hover */
+/* .about-us .col-md-6:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+} */
+
+/* Responsive Styling */
+@media (max-width: 767px) {
+    .about-us-container {
+        padding: 20px;
+    }
+}
+
+#pencapaian .section-title {
+    position: relative;
+}
+
+#pencapaian .section-title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #07bf07;
+    bottom: -20px;
+    left: calc(50% - 25px);
+}
+
+.section-title {
+    color: #333; 
+}
+
+.achievement-card {
+    background-color: #fff; /* Warna latar belakang kartu pencapaian */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk kartu pencapaian */
+}
+
+.achievement-card h3 {
+    color: #07bf07; /* Warna teks judul pencapaian */
+}
+
+.achievement-card p {
+    color: #555; /* Warna teks isi pencapaian */
+}
+
+
+.services h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #07bf07;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.services {
+    background: #fff;
+}
+
+.services .card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.services .card:hover {
+    transform: scale(1.05);
+}
+
+
+.card-icon {
+    transition: .5s;
+}
+
+.card-icon:hover {
+    color: #07bf07;
+}
+
+.achievement {
+    /* background-color: #f8f9fa; */
+    padding: 60px 0; /* Padding atas dan bawah */
+}
+
+.title-container {
+    margin-bottom: 40px;
+}
+
+.achievement h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #07bf07;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.piagam {
+    display: flex;
+    justify-content: center;
+}
+
+.piagam img {
+    max-width: 100%; /* Menetapkan lebar maksimum gambar sesuai dengan lebar parentnya */
+    height: auto; /* Menjaga aspek rasio gambar */
+    border: 5px solid #1e1e1e; /* Garis tepi dengan warna sesuai keinginan Anda */
+    border-radius: 10px; /* Sudut melengkung pada gambar */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk efek 3D */
+    max-height: 80vh;
+    max-width: 100%;
+}
+
+
+.top-clients {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.client-logo {
+    max-width: 100%;
+    max-height: 100px; 
+    margin: 15px;
+}
+
+.top-clients h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #07bf07;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+@media (max-width: 767px) {
+    .top-clients .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .col-md-3 {
+        width: 50%; /* Two columns per row on mobile */
+    }
+
+    .client-logo {
+        margin: 10px; /* Adjust margin for mobile */
+    }
+}
+
+@media (max-width: 767px) {
+    #contact {
+        padding: 40px 0; /* Adjust padding for mobile */
+    }
+
+    #contact .col-md-6 {
+        margin-top: 20px; /* Add margin to the top for spacing */
+    }
+}
+
+a {
+    color: white;
+}
+
+.bg-darker {
+    background-color: #111;
+}
+
+/* Tambahan styling */
+.footer-bottom {
+    background: #222; /* Warna latar belakang untuk bagian hak cipta */
+}
+
+.footer-bottom p {
+    color: #ccc; /* Warna teks untuk bagian hak cipta */
+    font-size: 14px; /* Ukuran font untuk bagian hak cipta */
+}
+
+/* Animasi untuk list item pada hover */
+.list-item:hover {
+    transform: scale(1.1); /* Mengubah skala elemen saat di-hover */
+    transition: transform 0.3s ease; /* Menambahkan efek transisi untuk perubahan skala */
+}
+
+
+@media (max-width: 767px) {
+    .footer-top {
+        padding: 20px; /* Adjust padding for mobile */
+    }
+
+    .footer-top .col-md-3,
+    .footer-top .col-md-2,
+    .footer-top .col-md-5 {
+        margin-bottom: 15px; /* Adjust margin for mobile */
+    }
+}
+
+.footer-top .col-md-2 ul,
+.footer-top .col-md-5 p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; /* Ensure that the text doesn't overflow its container */
+}
+
+
+
